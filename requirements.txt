@@ -1,0 +1,24 @@
+# --- Core Flask ---
+Flask
+Flask-Cors
+flask-openapi3
+flask-restx
+flask-openapi3[swagger]
+
+# ORM
+Flask-SQLAlchemy
+SQLAlchemy
+SQLAlchemy-Utils
+psycopg2-binary
+pydantic
+
+# --- Migrations ---
+Flask-Migrate
+alembic
+
+# --- Segurança / Login ---
+Flask-JWT-Extended
+passlib  # Para hashing seguro de senhas
+
+# --- Utilidades ---
+python-dotenv # carregar variáveis de ambiente

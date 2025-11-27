@@ -1,0 +1,40 @@
+services:
+
+  backend:
+    build: .
+    command: flask --app manage.py run -h 0.0.0.0 -p 5000
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      FLASK_APP: manage.py
+      FLASK_ENV: development
+    networks:
+      - backend
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+    
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - backend
+  
+networks:
+  backend:
