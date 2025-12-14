@@ -9,7 +9,9 @@ services:
       - db
     environment:
       FLASK_APP: manage.py
-      FLASK_ENV: development
+      FLASK_ENV: development      
+    ports:
+      - "5000:5000"
     networks:
       - backend
 

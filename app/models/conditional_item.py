@@ -24,6 +24,9 @@ class ConditionalItem(db.Model):
 
     quantity = db.Column(db.Integer, default=1)
 
+    returned_quantity = db.Column(db.Integer, default=0)
+    purchased_quantity = db.Column(db.Integer, default=0)
+
     final_action = db.Column(
         db.String(20),
         default="pending"
@@ -36,3 +39,9 @@ class ConditionalItem(db.Model):
 
     conditional = relationship("Conditional", back_populates="items")
     product_stock = relationship("ProductStock")
+
+    @property
+    def product(self):
+        if self.product_stock:
+            return self.product_stock.product
+        return None

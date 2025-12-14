@@ -29,3 +29,7 @@ class ProductStock(db.Model):
         )
 
     product = relationship("Product", back_populates="stock_items")
+
+    @property
+    def quantity_real(self) -> int:
+        return self.quantity_available - self.quantity_reserved

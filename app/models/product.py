@@ -12,6 +12,8 @@ class Product(db.Model):
     api_id = db.Column(db.Integer, nullable=True)  # ID do FakeStoreAPI
     name = db.Column(db.String(120), nullable=False)
     description = db.Column(db.Text)
+    reference = db.Column(db.String(120), nullable=True)
+    brand = db.Column(db.String(120), nullable=True)
     category = db.Column(db.String(120))
     image_url = db.Column(db.Text)
     price = db.Column(db.Numeric(10, 2), nullable=False)

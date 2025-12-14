@@ -1,0 +1,112 @@
+[2025-12-14 20:17:32,511] ERROR Exception on /stock/ [GET] - call_trace=/usr/local/lib/python3.11/site-packages/flask/app.py L875 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/stock_routes.py", line 22, in get_all_stock
+    response = list_all_stock()
+               ^^^^^^^^^^^^^^^^
+  File "/app/app/services/stock_service.py", line 49, in list_all_stock
+    if filters.size:
+       ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'size'
+[2025-12-14 20:17:32,656] INFO 172.21.0.1 - - [14/Dec/2025 20:17:32] "[35m[1mGET /stock/ HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:19:42,506] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.4:5000 - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:19:42,510] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:20:10,188] INFO 172.21.0.1 - - [14/Dec/2025 20:20:10] "GET /products/sync HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:20:10,750] INFO 172.21.0.1 - - [14/Dec/2025 20:20:10] "GET /products/sync HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:20:11,487] ERROR Exception on /stock/ [GET] - call_trace=/usr/local/lib/python3.11/site-packages/flask/app.py L875 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/stock_routes.py", line 22, in get_all_stock
+    response = list_all_stock()
+               ^^^^^^^^^^^^^^^^
+  File "/app/app/services/stock_service.py", line 51, in list_all_stock
+    if filters.size:
+       ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'size'
+[2025-12-14 20:20:11,511] INFO 172.21.0.1 - - [14/Dec/2025 20:20:11] "[35m[1mGET /stock/ HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:20:11,521] ERROR Exception on /stock/ [GET] - call_trace=/usr/local/lib/python3.11/site-packages/flask/app.py L875 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask_openapi3/scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/app/app/routes/stock_routes.py", line 22, in get_all_stock
+    response = list_all_stock()
+               ^^^^^^^^^^^^^^^^
+  File "/app/app/services/stock_service.py", line 51, in list_all_stock
+    if filters.size:
+       ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'size'
+[2025-12-14 20:20:11,535] INFO 172.21.0.1 - - [14/Dec/2025 20:20:11] "[35m[1mGET /stock/ HTTP/1.1[0m" 500 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:21:25,998] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.4:5000 - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:21:26,004] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:22:57,903] INFO 172.21.0.1 - - [14/Dec/2025 20:22:57] "GET /products/sync HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:22:58,640] INFO 172.21.0.1 - - [14/Dec/2025 20:22:58] "GET /products/sync HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:00,091] INFO 172.21.0.1 - - [14/Dec/2025 20:23:00] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:00,128] INFO 172.21.0.1 - - [14/Dec/2025 20:23:00] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:13,974] INFO 172.21.0.1 - - [14/Dec/2025 20:23:13] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:14,131] INFO 172.21.0.1 - - [14/Dec/2025 20:23:14] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:33,382] INFO 172.21.0.1 - - [14/Dec/2025 20:23:33] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:34,802] INFO 172.21.0.1 - - [14/Dec/2025 20:23:34] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:35,669] INFO 172.21.0.1 - - [14/Dec/2025 20:23:35] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:23:37,330] INFO 172.21.0.1 - - [14/Dec/2025 20:23:37] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:24:02,338] INFO 172.21.0.1 - - [14/Dec/2025 20:24:02] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:24:02,629] INFO 172.21.0.1 - - [14/Dec/2025 20:24:02] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:24:04,379] INFO 172.21.0.1 - - [14/Dec/2025 20:24:04] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:24:05,220] INFO 172.21.0.1 - - [14/Dec/2025 20:24:05] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:24:07,836] INFO 172.21.0.1 - - [14/Dec/2025 20:24:07] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-14 20:24:08,619] INFO 172.21.0.1 - - [14/Dec/2025 20:24:08] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  

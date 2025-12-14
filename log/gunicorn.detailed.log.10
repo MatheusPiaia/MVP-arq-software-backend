@@ -1,0 +1,55 @@
+[2025-12-13 20:11:38,409] INFO 172.21.0.1 - - [13/Dec/2025 20:11:38] "[31m[1mPOST /conditional/fa39db05-68cc-46f7-b0b4-25cab2b2f57d/returned HTTP/1.1[0m" 422 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:36,779] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.4:5000 - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:36,799] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:39,871] INFO 172.21.0.1 - - [13/Dec/2025 20:12:39] "OPTIONS /conditional/fa39db05-68cc-46f7-b0b4-25cab2b2f57d/returned HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:39,936] INFO 172.21.0.1 - - [13/Dec/2025 20:12:39] "POST /conditional/fa39db05-68cc-46f7-b0b4-25cab2b2f57d/returned HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:39,994] INFO 172.21.0.1 - - [13/Dec/2025 20:12:39] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:40,009] INFO 172.21.0.1 - - [13/Dec/2025 20:12:40] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:12:55,020] INFO 172.21.0.1 - - [13/Dec/2025 20:12:55] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:18:50,871] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.4:5000 - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:18:50,878] INFO [33mPress CTRL+C to quit[0m - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:22,791] INFO 172.21.0.1 - - [13/Dec/2025 20:22:22] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:22,800] INFO 172.21.0.1 - - [13/Dec/2025 20:22:22] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:22,808] INFO 172.21.0.1 - - [13/Dec/2025 20:22:22] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:22,825] INFO 172.21.0.1 - - [13/Dec/2025 20:22:22] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:27,957] INFO 172.21.0.1 - - [13/Dec/2025 20:22:27] "POST /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:27,995] INFO 172.21.0.1 - - [13/Dec/2025 20:22:27] "GET /conditional/c0aaed4c-e269-4938-a043-bdab06fcf807 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:28,010] INFO 172.21.0.1 - - [13/Dec/2025 20:22:28] "GET /conditional/c0aaed4c-e269-4938-a043-bdab06fcf807 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:28,067] INFO 172.21.0.1 - - [13/Dec/2025 20:22:28] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:28,103] INFO 172.21.0.1 - - [13/Dec/2025 20:22:28] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:46,049] INFO 172.21.0.1 - - [13/Dec/2025 20:22:46] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:51,606] INFO 172.21.0.1 - - [13/Dec/2025 20:22:51] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:53,322] INFO 172.21.0.1 - - [13/Dec/2025 20:22:53] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:57,335] INFO Item 091a5ddd-8bf5-4543-ba46-cbdb5c29d8a6 adicionado ao condicional c0aaed4c-e269-4938-a043-bdab06fcf807 | Reservado 1 do estoque 0f0d7197-3e14-4711-ab72-301d2580e677 - call_trace=/app/app/services/conditional_service.py L96  
+[2025-12-13 20:22:57,344] INFO 172.21.0.1 - - [13/Dec/2025 20:22:57] "POST /conditional/item/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:57,362] INFO 172.21.0.1 - - [13/Dec/2025 20:22:57] "GET /conditional/c0aaed4c-e269-4938-a043-bdab06fcf807 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:58,982] INFO 172.21.0.1 - - [13/Dec/2025 20:22:58] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:59,019] INFO 172.21.0.1 - - [13/Dec/2025 20:22:59] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:59,019] INFO 172.21.0.1 - - [13/Dec/2025 20:22:59] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:22:59,049] INFO 172.21.0.1 - - [13/Dec/2025 20:22:59] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:23:03,225] INFO 172.21.0.1 - - [13/Dec/2025 20:23:03] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:23:56,510] INFO 172.21.0.1 - - [13/Dec/2025 20:23:56] "POST /conditional/c0aaed4c-e269-4938-a043-bdab06fcf807/close HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:23:56,532] INFO 172.21.0.1 - - [13/Dec/2025 20:23:56] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:23:56,546] INFO 172.21.0.1 - - [13/Dec/2025 20:23:56] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:01,670] INFO 172.21.0.1 - - [13/Dec/2025 20:24:01] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:12,823] INFO 172.21.0.1 - - [13/Dec/2025 20:24:12] "OPTIONS /conditional/c0aaed4c-e269-4938-a043-bdab06fcf807/returned HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:12,845] INFO 172.21.0.1 - - [13/Dec/2025 20:24:12] "POST /conditional/c0aaed4c-e269-4938-a043-bdab06fcf807/returned HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:12,892] INFO 172.21.0.1 - - [13/Dec/2025 20:24:12] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:12,911] INFO 172.21.0.1 - - [13/Dec/2025 20:24:12] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:18,504] INFO 172.21.0.1 - - [13/Dec/2025 20:24:18] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:25,875] INFO 172.21.0.1 - - [13/Dec/2025 20:24:25] "POST /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:25,940] INFO 172.21.0.1 - - [13/Dec/2025 20:24:25] "GET /conditional/2f38f2d3-9975-41cf-bc69-d7307e0e3b01 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:25,966] INFO 172.21.0.1 - - [13/Dec/2025 20:24:25] "GET /conditional/2f38f2d3-9975-41cf-bc69-d7307e0e3b01 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:26,001] INFO 172.21.0.1 - - [13/Dec/2025 20:24:26] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:26,057] INFO 172.21.0.1 - - [13/Dec/2025 20:24:26] "GET /stock/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:30,555] INFO Item abe7d069-a8b2-41fd-aa80-a88514803028 adicionado ao condicional 2f38f2d3-9975-41cf-bc69-d7307e0e3b01 | Reservado 1 do estoque 0f0d7197-3e14-4711-ab72-301d2580e677 - call_trace=/app/app/services/conditional_service.py L96  
+[2025-12-13 20:24:30,597] INFO 172.21.0.1 - - [13/Dec/2025 20:24:30] "POST /conditional/item/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:30,644] INFO 172.21.0.1 - - [13/Dec/2025 20:24:30] "GET /conditional/2f38f2d3-9975-41cf-bc69-d7307e0e3b01 HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:31,470] INFO 172.21.0.1 - - [13/Dec/2025 20:24:31] "GET /conditional/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  
+[2025-12-13 20:24:31,485] INFO 172.21.0.1 - - [13/Dec/2025 20:24:31] "GET /customer/ HTTP/1.1" 200 - - call_trace=/usr/local/lib/python3.11/site-packages/werkzeug/_internal.py L97  

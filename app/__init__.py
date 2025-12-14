@@ -10,6 +10,7 @@ migrate = Migrate()
 def create_app():
     info = Info(title="Minha API", version="1.0.0")
     app = OpenAPI(__name__, info=info)
+    app.url_map.strict_slashes = False
 
     app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://user:password@db:5432/mydb"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -18,6 +19,18 @@ def create_app():
     migrate.init_app(app, db)
 
     CORS(app)
+
+    from app.routes.main_routes import main_bp
+    from app.routes.product_routes import product_bp
+    from app.routes.stock_routes import stock_bp
+    from app.routes.customer_routes import customer_bp
+    from app.routes.conditional_routes import conditional_bp
+
+    app.register_api(main_bp)
+    app.register_api(product_bp)
+    app.register_api(stock_bp)
+    app.register_api(customer_bp)
+    app.register_api(conditional_bp)
 
     from app.models import(
         user, role, product,

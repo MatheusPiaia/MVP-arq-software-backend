@@ -1,7 +1,7 @@
 # --- Core Flask ---
 Flask
 Flask-Cors
-flask-openapi3
+flask-openapi3==3.1.3
 flask-restx
 flask-openapi3[swagger]
 
@@ -22,3 +22,4 @@ passlib  # Para hashing seguro de senhas
 
 # --- Utilidades ---
 python-dotenv # carregar variáveis de ambiente
+requests
