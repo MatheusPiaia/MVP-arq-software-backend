@@ -2,6 +2,8 @@
 
 * [Instalação](#-instalação)
 * [Descrição](#descrição)
+* [Banco de Dados](#️-banco-de-dados)
+* [Acessos](#-acessos)
 * [Funcionalidades](#funcionalidades)
 * [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 * [Autor](#autor)
@@ -16,33 +18,80 @@ cd meu-projeto
 git clone https://github.com/MatheusPiaia/MVP-arq-software-frontend.git frontend
 git clone https://github.com/MatheusPiaia/MVP-arq-software-backend.git backend
 ```
+Garantir que o projeto fique no padrão:
+```
+meu-projeto/
+├── backend/
+└── frontend/
+```
+Acessar então a pasta frontend e executar:
 ```
 cd frontend
 docker compose up --build
 ```
+Esse comando irá:
+- Criar o banco PostgreSQL
+- Executar as migrations
+- Executar o seed inicial (roles + usuário admin)
+- Subir a API Flask
 
 Abra o http://localhost:5173 no navegador para acessar a homepage da aplicação. 
 Abra o http://localhost:5000 no navegador para verificar a documentação da API em execução
 
-# Descrição
-Aplicação desenvolvida como MVP para a Sprint: 
 
-E para avaliação foi utilizado o parâmetro de Acurácia, aonde o Random Forest (RF) se mostrou melhor, com 93,92% de acurácia.
-O dataset utilizado foi retirado do site [Kagle](https://www.kagle.com/datasets/rakeshkapilavai/extrovert-vs-introvert-behavior-data)
+# Descrição
+Aplicação backend desenvolvida em Flask como MVP para a Sprint de Arquitetura de Software.
+Aplicação possui o objetivo de facilitar controle de estoque e de condicionais de uma loja de roupas online.
+Abaixo segue arquitetura utilizada:
+![arquitetura]
+
+Foi utilizada a API externa da FakeStore para obter os produtos de exemplo da loja online
+
+# 🗄️ Banco de Dados
+
+- PostgreSQL: localhost:5432
+- PgAdmin: http://localhost:5050
+    Email: admin@admin.com
+    Senha: admin
+
+# 🌐 Acessos
+-Frontend:
+http://localhost:5173
+
+-Backend (API):
+http://localhost:5000
+
+-Swagger:
+http://localhost:5000/swagger
+
+-PgAdmin:
+http://localhost:5050
 
 # Funcionalidades
-- [x] Cadastro de Usuário
-- [x] Predição da personalidade (Introvertido/Extrovertido)
+- [x] Cadastro de Clientes
+- [x] Importação dos produtos pela FakeStore
+- [x] Módulo de controle de estoque
+- [x] Cadastro de condicionais
+- [x] Adição de itens aos condicionais
+- [x] Retorno dos condicionais, informando produtos devolvidos e comprados
+- [x] Lógica controle de estoque para atualização em tempo real
+- [x] Filtros dinâmicos
+- [ ] Adição manual de novos produtos
+- [ ] Autenticação
 
 Após a Execução da API é possível acessar a documentação via Swagger e verificar/testar todas as funcionalidades da aplicação.
 Abaixo segue todas as rotas da API
-![rotas api](https://github.com/user-attachments/assets/f75eccdd-10c3-4d5f-991d-3cb3e9841f29)
+![rotas api]
 
 
 
 # 🛠 Tecnologias utilizadas
 - [Python](https://www.python.org/)
 - [Flask](https://flask.palletsprojects.com/en/stable/)
+- [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io/en/stable/)
+- [Flask-Migrate (Alembic)](https://flask-migrate.readthedocs.io/en/latest/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Docker](https://www.docker.com/)
 - [Pydantic](https://docs.pydantic.dev/latest/)
 - [OpenAPI3](https://swagger.io/solutions/getting-started-with-oas/)
 
