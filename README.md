@@ -36,6 +36,7 @@ Esse comando irá:
 - Subir a API Flask
 
 Abra o http://localhost:5173 no navegador para acessar a homepage da aplicação. 
+
 Abra o http://localhost:5000 no navegador para verificar a documentação da API em execução
 
 
@@ -43,7 +44,7 @@ Abra o http://localhost:5000 no navegador para verificar a documentação da API
 Aplicação backend desenvolvida em Flask como MVP para a Sprint de Arquitetura de Software.
 Aplicação possui o objetivo de facilitar controle de estoque e de condicionais de uma loja de roupas online.
 Abaixo segue arquitetura utilizada:
-![arquitetura]
+![arquitetura](https://github.com/user-attachments/assets/ff57b81d-75aa-4e95-8acb-358a5b94237a)
 
 Foi utilizada a API externa da FakeStore para obter os produtos de exemplo da loja online
 
@@ -80,6 +81,7 @@ http://localhost:5050
 - [ ] Autenticação
 
 Após a Execução da API é possível acessar a documentação via Swagger e verificar/testar todas as funcionalidades da aplicação.
+
 Abaixo segue todas as rotas da API
 ![rotas api]
 
