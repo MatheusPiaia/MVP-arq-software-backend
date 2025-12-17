@@ -68,7 +68,7 @@ http://localhost:5173
 http://localhost:5000
 
 -Swagger:
-http://localhost:5000/swagger
+http://localhost:5000/openapi/swagger#
 
 -PgAdmin:
 http://localhost:5050
