@@ -83,7 +83,13 @@ http://localhost:5050
 Após a Execução da API é possível acessar a documentação via Swagger e verificar/testar todas as funcionalidades da aplicação.
 
 Abaixo segue todas as rotas da API
-![rotas api]
+![rotas api](https://github.com/user-attachments/assets/b1f4d847-f235-4918-aef3-e1ddee91f871)
+![rotas api](https://github.com/user-attachments/assets/d3350cfb-d894-4018-a82e-9bfefc5ecf27)
+
+Utilizado Pydantic para padronizar as respostas pelos schemas, como o exemplo abaixo
+![Schema Response](https://github.com/user-attachments/assets/4e2ad4ce-aafd-446d-a9e1-f5e38368d6c3)
+![Schema Response](https://github.com/user-attachments/assets/f2e3a29b-e97d-4514-bffc-f97e4ca16d67)
+
 
 
 
