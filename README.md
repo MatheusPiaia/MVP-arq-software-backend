@@ -39,6 +39,11 @@ Abra o http://localhost:5173 no navegador para acessar a homepage da aplicação
 
 Abra o http://localhost:5000 no navegador para verificar a documentação da API em execução
 
+Após a segunda execução seguir:
+```
+cd frontend
+docker compose up -d
+```
 
 # Descrição
 Aplicação backend desenvolvida em Flask como MVP para a Sprint de Arquitetura de Software.
